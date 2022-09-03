@@ -1,0 +1,6 @@
+print('TEMPO PARA DOWNLOAD')
+arquivo = float(input('Informe o tamanho do arquivo para download em MB: '))
+velocidade = float(input('Informe a velocidade da internet em Mbps: '))
+velocidadereal = float(velocidade / 8)
+minutos = float( (arquivo / velocidadereal) / 60)
+print(f'O tempo aproximado para o download do arquivo é de: {minutos:.1f} minutos')

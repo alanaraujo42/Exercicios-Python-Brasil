@@ -16,7 +16,7 @@ while atleta != '':
         menor = salto
     contador += 1
   contador = int(1)
-  print(f'\nAtelta: {atleta}\n')
+  print(f'\nAtleta: {atleta}\n')
   for item in lista:
     print(f'{contador}º Salto: {item}m')
     contador += 1

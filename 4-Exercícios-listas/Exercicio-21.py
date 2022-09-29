@@ -21,8 +21,6 @@ menor = combustivel[0]
 print('\nReletorio Final')
 for item in carros:
   print(f'{posicao}- {carros[contador]}', ' ' * (10 - len(carros[contador])),  f'- {km_l[contador]}', ' ' * (4 - len(str(km_l[contador]))),  f'- {combustivel[contador]:.1f} litros', ' ' * (5 - len(str(combustivel[contador]))) ,f'- R${preco[contador]:.2f}')
-  # print(f"""  {posicao}- {carros[contador]} - {km_l[contador]} - {combustivel[contador]:.1f} litros - R${preco[contador]:.2f}
-  # """)
   if combustivel[contador] < menor:
     carro_economico = carros[contador]
   contador += 1

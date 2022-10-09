@@ -1,0 +1,12 @@
+carro
+pedra
+televisao
+lapis
+caneta
+porta
+celular
+sofa
+rato
+cachorro
+radio
+novela

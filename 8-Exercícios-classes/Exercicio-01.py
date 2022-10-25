@@ -4,7 +4,6 @@ class Bola:
     self.cor = None
     self.circunferencia = None
     self.material = None
-    print('Inicio')
   
   def trocar_cor(self, cor):
     self.cor = cor

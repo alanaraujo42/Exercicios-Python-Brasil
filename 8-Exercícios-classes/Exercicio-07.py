@@ -17,6 +17,18 @@ class BichinhoVirtual:
 
   def alterar_idade(self, idade):
     self.idade = idade
+
+  def retornar_nome(self):
+    print(self.nome)
+  
+  def retornar_fome(self):
+    print(self.fome)
+  
+  def retornar_saude(self):
+    print(self.saude)
+  
+  def retornar_idade(self):
+    print(self.idade)
   
   def humor(self):
     return self.fome + self.saude

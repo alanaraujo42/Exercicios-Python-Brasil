@@ -7,13 +7,19 @@ class BombaCombusticel:
   
   def abastecer_por_valor(self, valor):
     total_litro = valor / self.valor_litro
-    self.qtde_combustivel -= total_litro
-    print(f'Foi abastecido {total_litro:.2f} litros')
+    if total_litro < self.qtde_combustivel:
+      self.qtde_combustivel -= total_litro
+      print(f'Foi abastecido {total_litro:.2f} litros')
+    else:
+      print('Quantidade de combustível na bomba insuficiente')
   
   def abastecer_por_litro(self, valor):
-    total_valor = valor * self.valor_litro
-    self.qtde_combustivel -= valor
-    print(f'O valor a ser pago é de {total_valor:.2f}')
+    if valor < self.qtde_combustivel:
+      total_valor = valor * self.valor_litro
+      self.qtde_combustivel -= valor
+      print(f'O valor a ser pago é de {total_valor:.2f}')
+    else:
+      print('Quantidade de combustível na bomba insuficiente')
   
   def alterar_valor(self, novo_valor):
     self.valor_litro = novo_valor

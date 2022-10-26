@@ -31,4 +31,4 @@ class BichinhoVirtual:
     print(self.idade)
   
   def humor(self):
-    return self.fome + self.saude
+    return self.saude + (self.saude / self.fome)
